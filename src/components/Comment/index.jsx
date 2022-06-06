@@ -1,7 +1,7 @@
 import { ThumbsUp, Trash } from 'phosphor-react'
 import styles from './styles.module.css'
 
-export function Comment() {
+export function Comment(props) {
   const urlAvatar = "https://github.com/rafaelsrabelo.png"
 
   return (
@@ -22,7 +22,7 @@ export function Comment() {
             </button>
           </header>
           <p>
-            Muito bom Rabelo, parabéns!
+            {props.content}
           </p>
         </div>
 
